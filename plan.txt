@@ -1,0 +1,126 @@
+Workoutplan
+
+Workout #0
+Bench Press 75
+Row 75
+Triceps Extension 75
+Squat 75
+
+
+Workout #1
+Overhead Press 75
+Chin Ups 75
+Curls 75
+Squat 75
+
+
+Workout #2
+Bench Press 75
+Row 75
+Triceps Extension 75
+Deadlift 75
+
+
+Workout #3
+Overhead Press 75
+Chin Ups 75
+Curls 75
+Squat 90
+
+
+Workout #4
+Bench Press 90
+Row 90
+Triceps Extension 90
+Squat 75
+
+
+Workout #5
+Overhead Press 90
+Chin Ups 90
+Curls 90
+Deadlift 75
+
+
+Workout #6
+Bench Press 75
+Row 75
+Triceps Extension 75
+Squat 75
+
+
+Workout #7
+Overhead Press 75
+Chin Ups 75
+Curls 75
+Squat 90
+
+
+Workout #8
+Bench Press 75
+Row 75
+Triceps Extension 75
+Deadlift 90
+
+
+Workout #9
+Overhead Press 75
+Chin Ups 75
+Curls 75
+Squat 75
+
+
+Workout #10
+Bench Press 90
+Row 90
+Triceps Extension 90
+Squat 75
+
+
+Workout #11
+Overhead Press 90
+Chin Ups 90
+Curls 90
+Deadlift 75
+
+
+Workout #12
+Bench Press 75
+Row 75
+Triceps Extension 75
+Squat 90
+
+
+Workout #13
+Overhead Press 75
+Chin Ups 75
+Curls 75
+Squat 75
+
+
+Workout #14
+Bench Press 75
+Row 75
+Triceps Extension 75
+Deadlift 75
+
+
+Workout #15
+Overhead Press 75
+Chin Ups 75
+Curls 75
+Squat 75
+
+
+Workout #16
+Bench Press 90
+Row 90
+Triceps Extension 90
+Squat 90
+
+
+Workout #17
+Overhead Press 90
+Chin Ups 90
+Curls 90
+Deadlift 90
