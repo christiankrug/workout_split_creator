@@ -96,6 +96,7 @@ while workoutNumber != 100000:
     else:
         workoutPlan.append(WorkoutDay(workoutNumber, constructWorkoutDay(dominantExercise, dayTwoExercises[:])))
 
+    # Find successful cycle if most recent 20 workout days are identical to the first 20 workout days
     if workoutNumber > 20:
         success = True
         for i in range(0, 20):
