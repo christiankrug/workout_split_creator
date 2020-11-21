@@ -65,6 +65,7 @@ dayTwoExercises = ["Overhead Press", "Chin Ups",
 workoutNumber = 0
 workoutPlan = []
 lightExerciseCounter = {}
+limit = math.inf
 
 # Initiate light exercise counters (we start with light everywhere)
 for exercise in mainExercises:
@@ -77,7 +78,6 @@ for exercise in dayTwoExercises:
 # Initiate dominant exercise counter (we start with Squats)
 dominantExerciseCounter = 1
 
-limit = math.inf
 while workoutNumber != 100000:
 
     # Determine Dominant Exercise (1,2 -> Squat, 3 -> Deadlift)
