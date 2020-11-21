@@ -1,3 +1,6 @@
+import math
+
+
 class Exercise:
     def __init__(self, name, intensity):
         self.name = name
@@ -16,18 +19,23 @@ def printWorkoutDay(workoutDay):
         print(exercise.name + " " + str(exercise.intensity))
 
 
-def printWorkoutPlan(workoutPlan):
+def printWorkoutPlan(workoutPlan, limit=math.inf):
     print("Workoutplan\n")
+    i = 0
     for workoutDay in workoutPlan:
+        if i > limit:
+            break
         printWorkoutDay(workoutDay)
         print("\n")
+        i += 1
 
 
 def compareWorkoutDays(workoutOne, workoutTwo):
     if len(workoutOne.exercises) != len(workoutTwo.exercises):
         return False
     for i in range(0, len(workoutOne.exercises)):
-        if workoutOne.exercises[i].name != workoutTwo.exercises[i].name or workoutOne.exercises[i].intensity != workoutTwo.exercises[i].intensity:
+        if workoutOne.exercises[i].name != workoutTwo.exercises[i].name or workoutOne.exercises[i].intensity != \
+                workoutTwo.exercises[i].intensity:
             return False
     return True
 
@@ -63,6 +71,7 @@ for exercise in dayTwoExercises:
 # Initiate dominant exercise counter (we start with Squats)
 dominantExerciseCounter = 1
 
+limit = math.inf
 while workoutNumber != 100000:
 
     # Determine Dominant Exercise (1,2 -> Squat, 3 -> Deadlift)
@@ -84,13 +93,13 @@ while workoutNumber != 100000:
     if workoutNumber > 20:
         success = True
         for i in range(0, 20):
-            if not compareWorkoutDays(workoutPlan[i], workoutPlan[workoutNumber-20+i]):
+            if not compareWorkoutDays(workoutPlan[i], workoutPlan[workoutNumber - 20 + i]):
                 success = False
         if success:
-            print("Found cycle " + str(workoutNumber))
+            print("Found cycle of " + str(workoutNumber - 20) + " workouts.")
+            limit = workoutNumber - 20 - 1
             break
 
     workoutNumber += 1
 
-
-printWorkoutPlan(workoutPlan)
+printWorkoutPlan(workoutPlan, limit)
