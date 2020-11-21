@@ -1,4 +1,10 @@
 import math
+from enum import Enum
+
+
+class Intensity(Enum):
+    LIGHT = 75
+    HEAVY = 90
 
 
 class Exercise:
@@ -16,7 +22,7 @@ class WorkoutDay:
 def printWorkoutDay(workoutDay):
     print("Workout #" + str(workoutDay.number))
     for exercise in workoutDay.exercises:
-        print(exercise.name + " " + str(exercise.intensity))
+        print(exercise.name + " " + str(exercise.intensity.value))
 
 
 def printWorkoutPlan(workoutPlan, limit=math.inf):
@@ -44,7 +50,7 @@ def constructWorkoutDay(dominantExercise, dayExercises):
     tempexarray = []
     dayExercises.append(dominantExercise)
     for exercise in dayExercises:
-        intensity = 90 if lightExerciseCounter[exercise] % 3 == 0 else 75
+        intensity = Intensity.HEAVY if lightExerciseCounter[exercise] % 3 == 0 else Intensity.LIGHT
         tempexarray.append(Exercise(exercise, intensity))
         lightExerciseCounter[exercise] += 1
     return tempexarray
